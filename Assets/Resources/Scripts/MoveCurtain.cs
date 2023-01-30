@@ -22,7 +22,7 @@ public class MoveCurtain : MonoBehaviour
             curtain_r.transform.position -= new Vector3(moveSpeed, 0, 0);
 
             Debug.Log(moveSpeed);
-            if (curtain_l.transform.position.x > 1000) {
+            if (curtain_l.transform.position.x > 10000) {
                 isMoving = false;
             }
         }
