@@ -6,6 +6,7 @@ public class MoveCurtain : MonoBehaviour
 {
     public GameObject curtain_l;
     public GameObject curtain_r;
+    public GameObject fade;
 
     RectTransform rectTrans;
     public bool isMoving = false;
@@ -21,8 +22,7 @@ public class MoveCurtain : MonoBehaviour
             curtain_l.transform.position += new Vector3(moveSpeed, 0, 0);
             curtain_r.transform.position -= new Vector3(moveSpeed, 0, 0);
 
-            Debug.Log(moveSpeed);
-            if (curtain_l.transform.position.x > 10000) {
+            if (curtain_l.transform.position.x > 550) {
                 isMoving = false;
             }
         }
